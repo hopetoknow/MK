@@ -81,11 +81,11 @@ function changeHP (player1, player2) {
 }
 
 function playerWin(name) {
-    const $loseTitle = createElement('div', 'loseTitle');
-    $loseTitle.innerText = name + ' wins';
+    const $winnerTitle = createElement('div', 'winnerTitle');
+    $winnerTitle.innerText = name + ' wins';
     $randomButton.disabled = true;
 
-    return $loseTitle;    
+    return $winnerTitle;    
 }
 
 function generateRandomNumber() {
